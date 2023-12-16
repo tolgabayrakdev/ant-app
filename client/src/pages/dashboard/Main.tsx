@@ -1,8 +1,15 @@
+import { Helmet } from "react-helmet-async"
 
 type Props = {}
 
-export default function Main({}: Props) {
+
+export default function Main({ }: Props) {
   return (
-    <div>Main</div>
+    <div>
+      <Helmet>
+        <title>Ant-App | Dashboard</title>
+      </Helmet>
+      <p>Main page</p>
+    </div>
   )
 }
