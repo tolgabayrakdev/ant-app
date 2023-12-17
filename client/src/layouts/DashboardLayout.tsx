@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
@@ -19,7 +19,7 @@ const items: any = [
         key: '0',
     },
     {
-        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        label: <Link to="settings">Settings</Link>,
         key: '1',
     },
     {

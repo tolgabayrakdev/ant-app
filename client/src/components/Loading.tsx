@@ -4,8 +4,8 @@ type Props = {}
 
 export default function Loading({ }: Props) {
     return (
-        <div>
-            <Spin />
+        <div className="flex h-screen justify-center items-center">
+            <Spin size="large" />
         </div>
     )
 }

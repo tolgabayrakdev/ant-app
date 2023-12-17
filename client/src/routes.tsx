@@ -4,6 +4,8 @@ import NotFound from "./pages/NotFound";
 import DashboardLayout from "./layouts/DashboardLayout";
 import Main from "./pages/dashboard/Main";
 import Settings from "./pages/dashboard/Settings";
+import Login from "./pages/authentication/Login";
+import Register from "./pages/authentication/Register";
 
 
 
@@ -21,9 +23,18 @@ const routes = createBrowserRouter([
         ]
     },
     {
+        path: "/login",
+        element: <Login />
+    },
+    {
+        path: "/register",
+        element: <Register />
+    },
+    {
         path: "*",
         element: <NotFound />
     },
+
 
 ]);
 
